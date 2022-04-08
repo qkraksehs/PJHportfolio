@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>박정현 | 웹 퍼블리셔 포트폴리오</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- google-wepfont -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/pc.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 사이트소개글 -->
+    <meta name="description" content="신입 웹 퍼블리셔 박정현의 포트폴리오 홈페이지입니다.">
+    <!-- 검색 키워드 등록 -->
+    <meta name="keywords" content="반응형홈페이지, 웹퍼블리셔, 웹퍼블리셔포트폴리오, html, css, jquery, 박정현포트폴리오, 웹디자이너포트폴리오, 웹디자인, UI/UX디자인">
+    <!-- 저자(작성자) -->
+    <meta name="author" content="박정현">
+    <!-- SEO, SNS 최적화(페이스북, 카카오톡 등) -->
+    <meta property="og:image" content="./title.jpg">
+    <meta property="og:title" content="박정현 포트폴리오 홈페이지">
+    <meta property="og:description" content="신입 웹 퍼블리셔 박정현의 포트폴리오 홈페이지입니다">
+    <!-- 
+        담당자님 안녕하세요^^!
+     -->
+</head>
+
+<body>
+    <!-- header -->
+    <header id="main-header">
+        <h1>
+            <a href="index.html"><img src="./images/logo.svg" alt="logo"></a>
+        </h1>
+        <nav id="gnb">
+            <ul>
+                <li>
+                    <a href="#page-1">Home</a>
+                </li>
+                <li>
+                    <a href="#page-2">About & Skills</a>
+                </li>
+                <li>
+                    <a href="#page-3">Works</a>
+                </li>
+                <li>
+                    <a href="#page-4">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- mobile menu btn -->
+        <button id="gnb-toggle-btn" class="mobile-only">
+            <img src="./images/mobile-menu-icon.svg" alt="main menu">
+        </button>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- home -->
+        <section id="page-1">
+            <div id="home">
+                <div class="text-box">
+                    <div class="wep animate__animated animate__fadeInTopLeft animate__delay-1s">
+                        <p>Wep pubisher</p>
+                        <div class="line right"></div>
+                    </div>
+                    <h2 class="do_type text" title="I LOVE PUBLISING ">title</h2>
+                    <div class="park animate__animated animate__fadeInBottomRight animate__delay-2s">
+                        <div class="line left"></div>
+                        <p>Park JeongHyun</p>
+                    </div>
+
+                    <h3 class="animate__animated animate__fadeInDown animate__delay-3s">기본이 되어있는
+                        <br>
+                        성실함이 최우선인
+                    </h3>
+                    <a href="#page-2" class="page-down" title="about 페이지로 자동 이동"><img src="./images/bottom-move.svg"
+                            alt="page-2-move"></a>
+                </div>
+            </div>
+
+        </section>
+        <!-- about & skills -->
+        <section id="page-2">
+            <div class="container">
+                <div id="about">
+                    <div class="rectangle"></div>
+                    <h2 data-aos="fade-down" data-aos-duration="1000">#About</h2>
+                    <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+                        <h3><span>UI/UX</span> DESING</h3>
+                        <h3>WEP <span>PUBISHER</span></h3>
+                    </div>
+                    <img src="./images/profile-me.jpg" alt="myPhoto" data-aos="fade-down" data-aos-duration="1000"
+                        data-aos-delay="600">
+                    <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
+                        <p class="name">박정현</p>
+                        <p>1999.05.03 (24)</p>
+                        <p>Korea Gimpo</p>
+                        <p>반갑습니다<br>
+                            성실함과 기본에 충실한 신입<br>
+                            웹 퍼블리셔 박정현 입니다<br>
+                            항상 자기계발을 위해 노력하고 있습니다.</p>
+                    </div>
+                </div>
+                <div id="skills" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300">
+                    <h2 class="title">#Skills</h2>
+                    <div class="line"></div>
+                    <div class="skills-icon-box pc-only">
+                        <img src="./images/html-icon.svg" alt="html-logo">
+                        <img src="./images/css-icon.svg" alt="css-logo">
+                        <img src="./images/js-icon.svg" alt="js-logo">
+                        <img src="./images/ps-icon.svg" alt="photoshop-logo">
+                        <img src="./images/figma-icon.svg" alt="figma-logo">
+                    </div>
+                    <div class="skills-icon-box mobile-only">
+                        <img src="./images/html-icon-m.svg" alt="html-logo">
+                        <img src="./images/css-icon-m.svg" alt="css-logo">
+                        <img src="./images/js-icon-m.svg" alt="js-logo">
+                        <img src="./images/ps-icon-m.svg" alt="photoshop-logo">
+                        <img src="./images/figma-icon-m.svg" alt="figma-logo">
+                    </div>
+                    <div class="line"></div>
+                    <h2>License</h2>
+                    <p>GTQ(그래픽기술자격)1급</p>
+                    <div class="line"></div>
+                    <h2>Education</h2>
+                    <div class="ed-box">
+                        <p>김포 이젠아카데미컴퓨터학원</p>
+                        <p>영상콘텐츠를 활용한 UI/UX웹디자인(웹퍼블리셔)</p>
+                        <p>2021.11 ~ 2022.04</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="rectangle"></div>
+                </div>
+            </div>
+        </section>
+        <section id="page-3">
+            <div id="works">
+                <h2 data-aos="fade-down" data-aos-duration="1000">#Works</h2>
+                <div class="rectangle"></div>
+                <!-- 슬라이더 컨테이터 -->
+                <div id="main-visual" class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- 슬라이더 콘텐츠 -->
+                        <div class="swiper-slide s1"
+                        data-aos="zoom-in"
+                        data-aos-duration="600"
+                        data-aos-delay="300">
+                            <img src="./images/work1.jpg" alt="전방텍스타일홈페이지-썸네일">
+                            <div class="title">
+                                <h2>전방텍스타일 리뉴얼 홈페이지(TeamProject)</h2>
+                                <h2>View</h2>
+                                <p>반응형(PC, Mobile)</p>
+                                <h2>Color</h2>
+                                <div class="color">
+                                    <div class="color-box"></div>
+                                    <div class="color-box"></div>
+                                    <div class="color-box"></div>
+                                    <div class="color-box"></div>
+                                </div>
+                                
+                                <div class="quick-btn">
+                                    <a href="https://qkraksehs.github.io/ChonbangTextile/" target="_blank">Site</a>
+                                    <a href="./pdf/전방텍스타일-report.pdf" target="_blank">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide s2">
+                            <img src="./images/work2.jpg" alt="농심홈페이지-썸네일">
+                            <div class="title">
+                                <h2>농심 반응형 홈페이지</h2>
+                                <h2>View</h2>
+                                <p>반응형(PC, Mobile)</p>
+                                <h2>Color</h2>
+                                <div class="color">
+                                    <div class="color-box"></div>
+                                </div>
+                                
+                                <div class="quick-btn">
+                                    <a href="https://qkraksehs.github.io/nongshim/" target="_blank">Site</a>
+                                    <a href="./pdf/농심-report.pdf" target="_blank">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide s3">
+                            <img src="./images/work3.jpg" alt="넷플릭스홈페이지-썸네일">
+                            <div class="title">
+                                <h2>넷플릭스 원페이지 홈페이지</h2>
+                                <h2>View</h2>
+                                <p>PC</p>
+                                <h2>Color</h2>
+                                <div class="color">
+                                    <div class="color-box"></div>
+                                </div>
+                                
+                                <div class="quick-btn">
+                                    <a href="https://qkraksehs.github.io/NetFlix/" target="_blank">Site</a>
+                                    <a href="./pdf/넷플릭스-report.pdf" target="_blank">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide s4">
+                            <img src="./images/work4.jpg" alt="김포동물보호센터-썸네일">
+                            <div class="title">
+                                <h2>김포동물보호센터 리브랜딩 홈페이지</h2>
+                                <h2>View</h2>
+                                <p>PC</p>
+                                <h2>Color</h2>
+                                <div class="color">
+                                    <div class="color-box"></div>
+                                </div>
+                                
+                                <div class="quick-btn">
+                                    <a href="https://qkraksehs.github.io/Gimpo_Animal_Protection_Center/" target="_blank">Site</a>
+                                    <a href="./pdf/김포동물보호센터-report.pdf" target="_blank">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide s5">
+                            <img src="./images/work5.jpg" alt="쿠팡랜딩페이지-썸네일">
+                            <div class="title">
+                                <h2>쿠팡 랜딩페이지</h2>
+                                <h2>View</h2>
+                                <p>PC</p>
+                                <h2>Color</h2>
+                                <div class="color">
+                                    <div class="color-box"></div>
+                                    <div class="color-box"></div>
+                                    <div class="color-box"></div>
+                                    <div class="color-box"></div>
+                                    <div class="color-box"></div>
+                                </div>
+                                
+                                <div class="quick-btn">
+                                    <a href="https://qkraksehs.github.io/coupang_landing/" target="_blank">Site</a>
+                                    <a href="./pdf/쿠팡-report.pdf" target="_blank">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 하단 버튼 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 이동 화살표 -->
+                    <div class="swiper-button-prev pc-only"></div>
+                    <div class="swiper-button-next pc-only"></div>
+                </div><!-- swiper-->
+                
+            </div>
+            <div class="rectangle two"></div>
+        </section>
+        <section id="page-4">
+            <div class="rectangle"></div>
+            <div id="contact">
+                <div class="contact-info">
+                    
+                    <div class="text-box"
+                    data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"
+                    >
+                        <h3 class="inline">기본은 기본</h3><div class="line1"></div>
+                        <h3>성실함이 무기인</h3>
+                        <h3>웹 퍼블리셔 <span>박정현</span> 이였습니다</h3>
+                        <br>
+                        <h3>Thank You For Looking At</h3>
+                        <div class="line"></div>
+                        <h3 class="inline">My PORTFOLIO</h3>
+                    </div>
+                    <div class="info"
+                    data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"
+                    >
+                        <div class="sns">
+                            <h3>SNS</h3>
+                            <div class="icon">
+                                <a href="https://open.kakao.com/o/sl5CU69d" target="_blank"><img src="./images/kakao-icon.svg" alt="카카오톡-오픈채팅바로가기"></a>
+                                <a href="https://www.facebook.com/ataryuki" target="_blank"><img src="./images/facebook-icon.svg" alt="페이스북-박정현바로가기"></a>
+                                <a href="https://www.instagram.com/qkraksehs/" target="_blank"><img src="./images/insta-icon.svg" alt="인스타그램-박정현바로가기"></a>
+                            </div>
+                            
+                        </div>
+                        <div class="hp">
+                            <h3>HㆍP</h3>
+                            <p>010-7191-7711</p>
+                        </div>
+                        <div class="email">
+                            <h3>E-mail</h3>
+                            <p>ataryuki2@naver.com</p>
+                        </div>
+                        <div class="git-btn">
+                            <a href="https://github.com/qkraksehs" target="_blank">Github</a>
+                        </div>
+                </div>                    
+                </div>
+                <div class="contact-me pc-only">
+                    <img src="./images/contact-me.jpg" alt="박정현Photo">
+                </div>
+                
+            </div>
+            <div class="rectangletwo"></div>
+        </section>
+    </main>
+    <footer id="main-footer">
+            <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+            <p class="copy">Copyright &copy; Jeong Hyun Park, All rights reserved.</p>
+            <!-- <div class="top-button">
+                <a href="#"><img src="./images/hand-icon.svg" alt="손가락" class="hand"></a>
+                <a href="#"><img src="./images/top-button.svg" alt="위로가기"></a> -->
+            </div>
+            
+    </footer>
+
+
+
+
+
+
+
+    <script src="./js/swiper.js"></script>
+    <script src="./js/type/do_type.min.js"></script>
+    <script>
+        // run auto type
+        AOS.init();
+        do_type.type('h2');
+    </script>
+</body>
+
+</html>
