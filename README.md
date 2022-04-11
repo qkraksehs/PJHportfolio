@@ -23,10 +23,11 @@
         - UI디자인 - css
 
     - 지속적으로 수정, 보완 업데이트(04-11~)       
-    - 로고 Disign수정
+    - 로고 Design수정
     - #works영역에 작품을 간단하게 소개해주는 explain 추가
     - 메인배너에 line animation 수정
     - mobile swiper-pagination 위치수정
+    - favicon Design수정
 
 
 
