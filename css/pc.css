@@ -5,8 +5,20 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 1px;
-  height: 1px;
+  width: 18px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border: 4px solid transparent;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(243, 236, 236);
 }
 
 .mobile-only {
@@ -35,6 +47,7 @@ header h1 {
   margin-left: 40px;
   position: absolute;
   left: 0;
+  top: 15px;
 }
 
 #gnb>ul {
@@ -71,8 +84,8 @@ header h1 {
 /* main */
 /* home */
 #page-1 {
-    color: #fff;
-    overflow: hidden;
+  color: #fff;
+  overflow: hidden;
 }
 
 #home {
@@ -135,40 +148,48 @@ header h1 {
 }
 
 #page-1 .text-box .line.right {
-  animation: rightline 4s ease-in-out;
+  animation: rightline 4.5s ease-in-out;
 }
+
 @keyframes rightline {
-  to{
-    transform: scaleX(1);
+  to {
+    width: 448px;
   }
-  from{
-    transform: scaleX(0);
+
+  from {
+    width: 0px;
   }
 }
 
 #page-1 .text-box .line.left {
-  animation: leftline 5s ease-in-out;
+  animation: leftline 5.5s ease-in-out;
 }
+
 @keyframes leftline {
-  to{
-    transform: scaleX(1);
+  to {
+    width: 448px;
   }
-  from{
-    transform: scaleX(0);
+
+  from {
+    width: 0;
   }
 }
 
 #page-1 .text-box h2 {
   font-size: 86px;
   -webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: white;
   color: transparent;
 }
+
 /* 타이핑 */
-@keyframes cursor{
-  50%{ border-color: transparent; }
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
 }
-.text{
+
+.text {
   display: table-cell;
   vertical-align: middle;
   border-right: .05em solid #fff;
@@ -205,22 +226,24 @@ header h1 {
 
 @keyframes move {
   from {
-      transform: translate(0,0);
+    transform: translate(0, 0);
   }
+
   to {
-      transform: translate(0,20px);
+    transform: translate(0, 20px);
   }
 }
+
 /* about */
 #page-2 {
- /* overflow: hidden; */
- display: flex;
- justify-content: center;
- align-items: center;
- background: linear-gradient(180deg, #EEEEEE 0%, rgba(238, 238, 238, 0) 100%);
- background-size: cover;
- background-position: center;
- height: 100vh;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #EEEEEE 0%, rgba(238, 238, 238, 0) 100%);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 #page-2 .container {
@@ -248,12 +271,14 @@ header h1 {
   z-index: -1;
   animation: rect 1.5s alternate infinite ease-in;
 }
+
 @keyframes rect {
   from {
-      transform: translate(0,0);
+    transform: translate(0, 0);
   }
+
   to {
-      transform: translate(-200px,0);
+    transform: translate(-200px, 0);
   }
 }
 
@@ -291,6 +316,7 @@ header h1 {
 #about p:last-child {
   margin-top: 10px;
 }
+
 /* skills */
 #skills {
   width: 50vw;
@@ -306,14 +332,16 @@ header h1 {
   position: absolute;
   right: 0;
   bottom: 120px;
-  animation: rect2 1.5s alternate infinite ease-in;
+  animation: recttwo 1.5s alternate infinite ease-in;
 }
-@keyframes rect2 {
+
+@keyframes recttwo {
   from {
-      transform: translate(0,0);
+    transform: translate(0, 0);
   }
+
   to {
-      transform: translate(200px,0);
+    transform: translate(180px, 0);
   }
 }
 
@@ -344,7 +372,7 @@ header h1 {
   margin-bottom: 35px;
 }
 
-#skills > p {
+#skills>p {
   margin-top: 35px;
   margin-bottom: 35px;
 }
@@ -357,6 +385,7 @@ header h1 {
 #skills .ed-box p {
   margin-top: 10px;
 }
+
 /* works */
 #page-3 {
   overflow: hidden;
@@ -366,16 +395,16 @@ header h1 {
   height: 100vh;
   padding-top: 80px;
   position: relative;
- }
+}
 
- #works > h2 {
-   text-align: center;
-   margin-bottom: 70px;
-   font-size: 26px;
-   font-weight: 800;
- }
+#works>h2 {
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 26px;
+  font-weight: 800;
+}
 
- #works .rectangle {
+#works .rectangle {
   width: 365px;
   height: 70px;
   background: rgba(73, 169, 209, 0.3);
@@ -384,14 +413,17 @@ header h1 {
   top: 148px;
   animation: rect 1.5s alternate infinite ease-out;
 }
+
 @keyframes rect {
   from {
-      transform: translate(0,0);
+    transform: translate(0, 0);
   }
+
   to {
-      transform: translate(-200px,0);
+    transform: translate(-200px, 0);
   }
 }
+
 #page-3 .rectangle.two {
   width: 365px;
   height: 70px;
@@ -402,16 +434,18 @@ header h1 {
   z-index: 1;
   animation: rect2 1.5s alternate infinite ease-out;
 }
+
 @keyframes rect2 {
   from {
-      transform: translate(0,0);
+    transform: translate(0, 0);
   }
+
   to {
-      transform: translate(200px,0);
+    transform: translate(200px, 0);
   }
 }
 
- /* swiper slider */
+/* swiper slider */
 .swiper {
   width: 1520px;
   height: 700px;
@@ -495,13 +529,17 @@ header h1 {
   margin-top: 60px;
 }
 
+.swiper .swiper-slide .title .explain {
+  margin-top: 30px;
+}
+
 .swiper .swiper-slide .title .quick-btn a {
   color: #fff;
   background-color: var(--main-color);
   font-size: 26px;
   padding: 10px 50px;
   border-radius: 30px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .swiper .swiper-slide .title .quick-btn a:hover {
@@ -516,22 +554,24 @@ header h1 {
 
 .swiper-pagination-bullet {
   border-radius: 0;
-  border: 2px solid #505050;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  opacity: 1;
+  width: 10px;
+  height: 10px;  
+  background-color: #505050;
+  opacity: 0.4;
   border-radius: 100px;
 }
 
 .swiper-pagination-bullet-active {
   background: #505050;
   opacity: 1;
+  width: 20px;
+  height: 20px;
 }
 
 .swiper-pagination {
-  bottom: 0px !important;
+  bottom: 40px !important;
 }
+
 /* contact */
 #page-4 {
   overflow: hidden;
@@ -543,18 +583,18 @@ header h1 {
   color: #fff;
   flex-direction: column;
   position: relative;
- }
+}
 
- #contact {
-   width: 1520px;
-   height: 1000px;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   margin-top: 100px;
- }
+#contact {
+  width: 1520px;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
 
- #page-4 .rectangle {
+#page-4 .rectangle {
   width: 365px;
   height: 70px;
   background: var(--sub-color1);
@@ -563,12 +603,14 @@ header h1 {
   top: 148px;
   animation: rect 1.5s alternate infinite ease-in;
 }
+
 @keyframes rect {
   from {
-      transform: translate(0,0);
+    transform: translate(0, 0);
   }
+
   to {
-      transform: translate(-200px,0);
+    transform: translate(-200px, 0);
   }
 }
 
@@ -581,158 +623,173 @@ header h1 {
   bottom: 20px;
   animation: rect2 1.5s alternate infinite ease-in;
 }
+
 @keyframes rect2 {
   from {
-      transform: translate(0,0);
+    transform: translate(0, 0);
   }
+
   to {
-      transform: translate(200px,0);
+    transform: translate(200px, 0);
   }
 }
 
- #contact .contact-info {
-   display: inline-block;
-   position: relative;
- }
+#contact .contact-info {
+  display: inline-block;
+  position: relative;
+}
 
- #contact .text-box h3 {
-   font-size: 36px;
- }
+#contact .text-box h3 {
+  font-size: 36px;
+}
 
- #contact .text-box h3:last-child {
+#contact .text-box h3:last-child {
   vertical-align: middle;
-  border-right: .05em solid #fff;
+  border-right: 3px solid #fff;
   animation: cursor2 0.8s ease infinite;
- }
+}
 
- @keyframes cursor2{
-  50%{ border-color: transparent; }
+@keyframes cursor2 {
+  50% {
+    border-color: transparent;
+  }
 }
 
 
- #contact .text-box .line1 {
+#contact .text-box .line1 {
   width: 330px;
   height: 3px;
   background-color: #fff;
   display: inline-block;
   margin-bottom: 8px;
   margin-left: 10px;
-  animation: lineone 2s  ease-in-out;
+  animation: lineone 2s ease-in-out;
 }
 
- #contact .text-box .line {
-   width: 244px;
-   height: 3px;
-   background-color: #fff;
-   display: inline-block;
-   margin-bottom: 2px;
-   animation: linetwo 2s  ease-in-out;
- }
+#contact .text-box .line {
+  width: 244px;
+  height: 3px;
+  background-color: #fff;
+  display: inline-block;
+  margin-bottom: 2px;
+  animation: linetwo 2s ease-in-out;
+}
 
 @keyframes lineone {
-  to{
+  to {
     width: 330px;
   }
-  from{
+
+  from {
     width: 0px;
   }
 }
 
 @keyframes linetwo {
-  to{
+  to {
     width: 244px;
   }
-  from{
+
+  from {
     width: 0px;
   }
 }
 
- #contact .text-box .inline {
-   display: inline-block;
- }
+#contact .text-box .inline {
+  display: inline-block;
+}
 
- #contact .info {
-   margin-top: 105px;
- }
+#contact .info {
+  margin-top: 105px;
+}
 
- #contact .info h3 {
-   font-size: 26px;
-   display: flex;
-   align-items: center;
-   font-weight: 800;
- }
+#contact .info h3 {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+}
 
- #contact .info .sns {
-   display: flex;
-   margin-bottom: 30px;
- }
+#contact .info .sns {
+  display: flex;
+  margin-bottom: 30px;
+}
 
- #contact .info .sns .icon {
+#contact .info .sns .icon {
   margin-left: 50px;
   display: flex;
   align-items: center;
- }
+}
 
- #contact .info .sns a {
-   margin-left: 5px;
-   margin-right: 5px;
- }
+#contact .info .sns a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
- #contact .info .hp {
-   display: flex;
-   align-items: center;
-   margin-bottom: 30px;
- }
+#contact .info .hp {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
 
- #contact .info .hp p {
-   margin-left: 50px;
- }
+#contact .info .hp p {
+  margin-left: 50px;
+}
 
- #contact .info .email {
-   display: flex;
-   align-items: center;
- }
+#contact .info .email {
+  display: flex;
+  align-items: center;
+}
 
- #contact .info .email p {
-   margin-left: 30px;
- }
+#contact .info .email p {
+  margin-left: 30px;
+}
 
- #contact .info .git-btn {
-   display: inline-block;
-   width: 200px;
-   height: 70px;
-   background: #fff;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 30px;
-   position: absolute;
-   right: 0;
-   bottom: 0;
- }
+#contact .info .git-btn {
+  display: inline-block;
+  width: 200px;
+  height: 70px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
 
- #contact .info .git-btn a {
-   font-size: 36px;
-   color: var(--main-color);
-   font-weight: 700;
- }
+#contact .info .git-btn a {
+  font-size: 36px;
+  color: var(--main-color);
+  font-weight: 700;
+}
 
- #contact .info .git-btn a:hover {
-   font-weight: 800;
- }
+#contact .info .git-btn:hover {
+  background: #505050;
+}
 
- #contact .contact-me img {
-   border-radius: 30px;
-   animation: my-img 1s alternate infinite ease-in-out;
- }
- @keyframes my-img {
-   to {
-     transform: rotate(6deg);
-   }
-   from {
+#contact .info .git-btn:hover a {
+  border-bottom: 3px solid var(--main-color);
+  height: 40px;
+}
+
+#contact .contact-me img {
+  border-radius: 30px;
+  animation: my-img 1s alternate infinite ease-in-out;
+}
+
+@keyframes my-img {
+  to {
+    transform: rotate(2deg);
+  }
+
+  from {
     transform: rotate(0deg);
-   }
- }
+  }
+}
+
 /* footer */
 #main-footer {
   height: 80px;
@@ -750,4 +807,25 @@ header h1 {
 
 #main-footer .copy {
   color: #eaeaea;
+}
+
+/* loading screen */
+.loading.on {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background-color: var(--main-color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 64px;
+}
+
+.loading {
+  display: none;
 }
