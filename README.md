@@ -26,7 +26,7 @@
     - 로고 Disign수정
     - #works영역에 작품을 간단하게 소개해주는 explain 추가
     - 메인배너에 line animation 수정
-    - mobile swiper-pagination 위치
+    - mobile swiper-pagination 위치수정
 
 
 
