@@ -29,6 +29,12 @@
     - mobile swiper-pagination 위치수정
     - favicon Design수정
     - swiper bullet Design수정
+    - 제목 font-style, font-size 변경
+    - js아이콘 균일한 icon으로 변경
+    - page-3 #works 영역에 background 추가
+    - 슬라이더 이미지변경 및 화질개선
+    - 슬라이더 pagination 정렬
+    - 
 
 
 
