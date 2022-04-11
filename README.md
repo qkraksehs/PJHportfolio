@@ -28,6 +28,7 @@
     - 메인배너에 line animation 수정
     - mobile swiper-pagination 위치수정
     - favicon Design수정
+    - swiper bullet Design수정
 
 
 
