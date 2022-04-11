@@ -16,6 +16,7 @@
     - 메인페이지
         - PC, Mobile
         - mobile toggle menu - jQuery
+        - 메인배너 확대되는 효과- cssAnimation
         - Slider - Javascript plug-in
         - 애니메이션 효과 -aos plug-in, animate.css, cssAnimation
         - 링크연결 바로가기 기능 추가
@@ -24,7 +25,7 @@
     - 지속적으로 수정, 보완 업데이트(04-11~)       
     - 로고 Disign수정
     - #works영역에 작품을 간단하게 소개해주는 explain 추가
-    - 메인배너에 line 
+    - 메인배너에 line animation 수정
 
 
 
