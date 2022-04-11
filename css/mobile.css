@@ -73,7 +73,7 @@ header h1 {
 
 #home {
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: 100vh;
     background-image: url(../images/m-main-banner.jpg);
     animation: bg 20s linear infinite alternate;
     background-repeat: no-repeat;
@@ -183,7 +183,7 @@ header h1 {
 #page-1 .text-box a {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
     animation: move 1s alternate infinite ease-in;
 }
 
@@ -242,9 +242,10 @@ header h1 {
 }
 
 #about h2 {
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 800;
     margin-bottom: 20px;
+    font-family: 'Public Sans', sans-serif;
 }
 
 #about h3 {
@@ -254,6 +255,16 @@ header h1 {
 
 #about h3 span {
     font-weight: 800;
+}
+
+#about .uiuxbox {
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  z-index: 1;
+  top: 285px;
+  color: #fff;
+  text-shadow: 1px 1px 6px #333;
 }
 
 #about img {
@@ -273,7 +284,7 @@ header h1 {
 }
 
 #about p:last-child {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 /* skills */
@@ -309,6 +320,8 @@ header h1 {
 
 #skills .title {
     margin-bottom: 30px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 26px;
 }
 
 #skills h2 {
@@ -354,17 +367,19 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding-top: 80px;
+    height: 100%;
     position: relative;
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
+    padding-bottom: 50px;
 }
 
 #works>h2 {
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 18px;
+    /* margin-bottom: 30px; */
+    font-size: 26px;
     font-weight: 800;
+    font-family: 'Public Sans', sans-serif;
 }
 
 /* swiper slider */
@@ -381,6 +396,7 @@ header h1 {
 .swiper .swiper-slide img {
     width: 335px;
     height: 250px;
+    margin-left: 10px;
 }
 
 .swiper .swiper-slide .title {
@@ -388,7 +404,7 @@ header h1 {
 }
 
 .swiper .swiper-slide .title h2 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 800;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -397,6 +413,7 @@ header h1 {
   .swiper .swiper-slide .title h2:first-child {
     margin-top: 40px;
     margin-bottom: 0;
+    font-size: 18px;
   }
 
   .swiper .swiper-slide .title p {
@@ -485,12 +502,15 @@ header h1 {
   .swiper-pagination-bullet-active {
     background: #505050;
     opacity: 1;
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
   }
   
   .swiper-pagination {
-    bottom: 320px !important;
+    bottom: 340px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* contact */
@@ -504,7 +524,7 @@ header h1 {
     color: #fff;
     flex-direction: column;
     position: relative;
-    margin-top: 100px;
+    padding-top: 50px;
    }
 
    #contact {
