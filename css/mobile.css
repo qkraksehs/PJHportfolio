@@ -355,7 +355,8 @@ header h1 {
   background: var(--sub-color1);
   position: absolute;
   right: 0;
-  bottom: 70px;
+  bottom: 20px;
+  z-index: -1;
   animation: rect2 1.5s alternate infinite ease-in;
 }
 
