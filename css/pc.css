@@ -689,7 +689,7 @@ header h1 {
 }
 
 #contact .text-box .line {
-  width: 244px;
+  width: 315px;
   height: 3px;
   background-color: #fff;
   display: inline-block;
@@ -709,7 +709,7 @@ header h1 {
 
 @keyframes linetwo {
   to {
-    width: 244px;
+    width: 315px;
   }
 
   from {
