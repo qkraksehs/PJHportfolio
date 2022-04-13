@@ -40,6 +40,8 @@
     - (04-13~)
     - 모바일 토글메뉴 슬라이드효과 추가
     - 로딩화면 background-color 변경
+    - rectangle에 border-radius 추가
+    - rectangle Animation 변경
 
 
 
