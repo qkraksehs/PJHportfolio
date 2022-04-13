@@ -23,7 +23,7 @@ window.onload = function() {
 // mobile에서 pc로 넘어가도 gnb안없어지게..
 $(window).resize(function(){
     console.log(innerWidth);
-    if(innerWidth >= 768) {
+    if(innerWidth >= 769) {
         $('#gnb').show();
     }
 })
