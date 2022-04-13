@@ -50,6 +50,10 @@ header h1 {
   z-index: 100;
 }
 
+#gnb ul li a:active {
+  color: var(--sub-color2);
+}
+
 #gnb ul li {
   margin-bottom: 19px;
 }
@@ -730,14 +734,14 @@ header h1 {
   left: 0;
   top: 0;
   z-index: 999;
-  background-color: var(--main-color);
+  background: radial-gradient( circle farthest-corner at 10% 20%,  rgb(234,249,249) 0.1%, rgb(239,249,251) 90.1% );
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #fff;
+  color: #505050;
   font-size: 36px;
 }
 

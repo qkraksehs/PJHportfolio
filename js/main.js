@@ -2,7 +2,7 @@
 // mobile toggle menu
 $(function(){
     $('.ham').on('click', function(){
-        $('#gnb').toggleClass('on');
+        $('#gnb').slideToggle('');
     })
 });
 $(function(){
@@ -19,3 +19,11 @@ window.onload = function() {
         // console.log('문서 로딩 완료!')
     },1300)
 }
+
+// mobile에서 pc로 넘어가도 gnb안없어지게..
+$(window).resize(function(){
+    console.log(innerWidth);
+    if(innerWidth >= 768) {
+        $('#gnb').show();
+    }
+})
