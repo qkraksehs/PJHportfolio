@@ -711,12 +711,12 @@ header h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  line-height: 30px;
 }
 
 #main-footer .copy {
   color: #eaeaea;
   font-size: 10px;
+  margin-top: 5px;
 }
 
 #main-footer .top-button {
