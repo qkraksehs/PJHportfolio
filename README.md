@@ -42,6 +42,9 @@
     - 로딩화면 background-color 변경
     - rectangle에 border-radius 추가
     - rectangle Animation 변경
+    - (04-15~)
+    - pc버전 works영역에 퀵버튼 hover효과 변경
+    - pc버전 contact영역에 sns아이콘 animation추가
 
 
 
