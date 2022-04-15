@@ -574,8 +574,12 @@ header h1 {
 }
 
 .swiper .swiper-slide .title .quick-btn a:hover {
-  background-color: var(--sub-color1);
-  font-size: 30px;
+  animation: pulsate 1s ease-in-out;
+}
+@keyframes pulsate {
+    0%{
+      box-shadow: 0 0 25px #5ddcff,0 0 30px var(--sub-color1);
+    }
 }
 
 .swiper-button-prev,
@@ -761,6 +765,28 @@ header h1 {
   margin-left: 50px;
   display: flex;
   align-items: center;
+  border-bottom: 5px solid #fff;
+}
+
+.i-con {
+  animation: float 4s infinite ease-in-out;
+}
+.face {
+  animation-delay: 1s;
+}
+.insta {
+  animation-delay: 2s;
+}
+@keyframes float {
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-15px);
+    }
+    100%{
+      transform: translateY(0);
+    }
 }
 
 #contact .info .sns a {
