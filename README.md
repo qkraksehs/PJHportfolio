@@ -45,6 +45,8 @@
     - (04-15~)
     - pc버전 works영역에 퀵버튼 hover효과 변경
     - pc버전 contact영역에 sns아이콘 animation추가
+    - (04-25~)
+    - 보고있는 영역 메뉴 강조효과 추
 
 
 
