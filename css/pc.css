@@ -75,6 +75,11 @@ header h1 {
 #gnb ul li a:hover:before {
   width: 100%;
 }
+/* 메뉴 강조기능 */
+#gnb ul li a.active {
+  color: var(--sub-color1);
+  font-weight: 700;
+}
 
 /* main */
 /* home */
@@ -309,7 +314,7 @@ header h1 {
 }
 
 #about img {
-  border-radius: 1000px;
+  border-radius: 50%;
   margin-top: 25px;
 }
 

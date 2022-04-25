@@ -116,6 +116,11 @@ header h1 {
   transform: rotate(135deg);
 }
 
+/* 메뉴 강조기능 */
+#gnb ul li a.active {
+  color: var(--sub-color1);
+  font-weight: 700;
+}
 
 /* main */
 /* home */
