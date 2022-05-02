@@ -169,7 +169,7 @@ header h1 {
 }
 
 #page-1 .text-box .line {
-  width: 158px;
+  width: 140px;
   height: 3px;
   background: #fff;
   display: inline-block;
@@ -182,7 +182,7 @@ header h1 {
 
 @keyframes rightline {
   to {
-    width: 158px;
+    width: 140px;
   }
 
   from {
