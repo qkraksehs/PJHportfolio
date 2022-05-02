@@ -125,6 +125,7 @@ header h1 {
 
 #page-1 .text-box {
   margin-top: 150px;
+  width: 850px;
 }
 
 #page-1 .text-box p {
@@ -148,7 +149,8 @@ header h1 {
 }
 
 #page-1 .text-box .line.right {
-  animation: rightline 4.5s ease-in-out;
+  animation: rightline 2.5s ease-in-out;
+  animation-delay: 2s;
 }
 
 @keyframes rightline {
@@ -162,7 +164,8 @@ header h1 {
 }
 
 #page-1 .text-box .line.left {
-  animation: leftline 5.5s ease-in-out;
+  animation: leftline 2.5s ease-in-out;
+  animation-delay: 3s;
 }
 
 @keyframes leftline {

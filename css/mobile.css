@@ -160,6 +160,7 @@ header h1 {
 
 #page-1 .text-box {
   text-align: center;
+  width: calc(100% - 50px);
 }
 
 #page-1 .text-box p {
@@ -169,20 +170,21 @@ header h1 {
 }
 
 #page-1 .text-box .line {
-  width: 140px;
-  height: 3px;
+  width: 150px;
+  height: 2px;
   background: #fff;
   display: inline-block;
   margin-bottom: 4px;
 }
 
 #page-1 .text-box .line.right {
-  animation: rightline 4.5s ease-in-out;
+  animation: rightline 2.5s ease-in-out;
+  animation-delay: 2s;
 }
 
 @keyframes rightline {
   to {
-    width: 140px;
+    width: 150px;
   }
 
   from {
@@ -191,13 +193,13 @@ header h1 {
 }
 
 #page-1 .text-box .line.left {
-  animation: leftline 5s ease-in-out;
-  width: 140px;
+  animation: leftline 2.5s ease-in-out;
+  animation-delay: 3s;
 }
 
 @keyframes leftline {
   to {
-    width: 140px;
+    width: 150px;
   }
 
   from {
@@ -210,6 +212,7 @@ header h1 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   color: transparent;
+  display: inline-block;
 }
 
 /* 타이핑 */
