@@ -192,11 +192,12 @@ header h1 {
 
 #page-1 .text-box .line.left {
   animation: leftline 5s ease-in-out;
+  width: 140px;
 }
 
 @keyframes leftline {
   to {
-    width: 158px;
+    width: 140px;
   }
 
   from {
@@ -761,10 +762,43 @@ header h1 {
   font-size: 36px;
 }
 
-.loading>img {
+.loading.on .loader-wrapper {
+  width: 150px;
+  height: 150px;
+  margin-top: 50px;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  border: 10px solid var(--main-color);
+  border-top-color: var(--sub-color1);
+  border-bottom-color: var(--sub-color1);
+  border-radius: 50%;
+  animation: rotate 5s linear infinite;
+}
+
+.loader-inner {
+  border-top-color: var(--sub-color1);
+  border-bottom-color: var(--sub-color1);
+  animation-duration: 2.5s;
+}
+@keyframes rotate {
+    0% {
+      transform: scale(1) rotate(360deg);
+    }
+    50% {
+      transform: scale(.8) rotate(-360deg);
+    }
+    100% {
+      transform: scale(1) rotate(360deg);
+    }
+}
+
+/* .loading>img {
   width: 178px;
   height: 178px;
-}
+} */
 
 .loading {
   display: none;

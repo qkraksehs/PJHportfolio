@@ -17,7 +17,7 @@ window.onload = function() {
         // console.log('3초가 경과함...')
         $('.loading').removeClass('on');
         // console.log('문서 로딩 완료!')
-    },1300)
+    },2000)
 };
 
 // mobile에서 pc로 넘어가도 gnb안없어지게..
